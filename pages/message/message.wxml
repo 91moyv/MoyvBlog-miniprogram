@@ -1,0 +1,38 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">留言</view>
+</cu-custom>
+<view class="card">
+  <view class="cu-bar">
+    <view class="action sub-title">
+      <text class="text-xl text-bold text-blue">留言</text>
+      <text class="bg-blue"></text>
+      <!-- last-child选择器-->
+    </view>
+  </view>
+  <textarea class="input" value="{{input_v}}" bindinput="bindinput" placeholder-class="text-gray" placeholder="对小程序的建议和想说的话都可以留言嗷!"></textarea>
+  <button class="btn bg-gradual-blue" bindtap="sendMessage">确定</button>
+</view>
+<view class="cu-bar">
+  <view class="action">
+    <text class="cuIcon-titles text-blue"></text>
+    <text class="text-xl text-bold">全部留言</text>
+  </view>
+</view>
+
+<view class="list" wx:if="{{msgData.length > 0}}">
+  <view class="item" wx:for="{{msgData}}"  wx:key="index">
+    <view class="userinfo">
+      <image class="avatar" mode="widthFix" src="https://www.bzzb.top/images/default_head_img.jpg"></image>
+      <view>
+        <text class="username">匿名用户</text>
+        <text class="time text-gray">{{item.time}}</text>
+      </view>
+    </view>
+    <text class="content">{{item.content}}</text>
+    <text></text>
+  </view>
+
+
+  <text class="baseline">-😁底线 ? 穿越火线!-</text>
+</view>

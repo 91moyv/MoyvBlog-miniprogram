@@ -1,0 +1,18 @@
+<!--pages/article/article.wxml-->
+<cu-custom bgColor="bg-white" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">{{ArticleData.title}}</view>
+</cu-custom>
+<view class="article">
+  <text class="title">{{ArticleData.title}}</text>
+  <text class="subtitle">{{ArticleData.subtitle}}</text>
+  <view class="user">
+    <image class="user_icon" mode="widthFix" src="https://www.bzzb.top/images/default_head_img.jpg"></image>
+    <text class="author">{{ArticleData.author}}</text>
+  </view>
+  <view class="info">
+    <text>12306 阅读</text>
+    <text>{{ArticleData.time}} 时间</text>
+  </view>
+  <htmltowxml text="{{ArticleContent}}" showLoading="{{false}}" bindWxmlTagATap=""></htmltowxml>
+</view>

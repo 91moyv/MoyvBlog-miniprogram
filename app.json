@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/about",
+    "pages/article/article",
+    "pages/message/message",
+    "pages/discover/discover"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#17a2b8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icons/icon_index.png",
+        "selectedIconPath": "images/icons/icon_index_active.png"
+      },
+      {
+        "pagePath": "pages/discover/discover",
+        "text": "发现",
+        "iconPath": "images/icons/icon_discover.png",
+        "selectedIconPath": "images/icons/icon_discover_active.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "images/icons/icon_about.png",
+        "selectedIconPath": "images/icons/icon_about_active.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

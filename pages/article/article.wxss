@@ -1,0 +1,55 @@
+/* pages/article/article.wxss */
+page{
+  background-color: white;
+}
+.article {
+  margin: 32rpx;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 48rpx;
+}
+
+.subtitle {
+  display: block;
+  margin-top: 16rpx;
+  font-size: 32rpx;
+}
+
+.user {
+  margin: 32rpx 0rpx;
+  display: flex;
+  justify-content: start;
+  align-content: center;
+  align-items: center;
+}
+
+.user_icon {
+  width: 60rpx;
+  border-radius: 100px;
+}
+
+.author {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-left: 18rpx;
+}
+
+.info {
+  margin-bottom: 18rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info text {
+  color: #707070;
+  margin-right: 18rpx;
+  display: inline-block;
+  font-size: 24rpx;
+}
+
+.content {
+  margin-top: 32rpx;
+  display: block;
+}

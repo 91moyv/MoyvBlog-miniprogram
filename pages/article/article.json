@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "htmltowxml": "../../html2wxml-component/html2wxml"
+  }
+}

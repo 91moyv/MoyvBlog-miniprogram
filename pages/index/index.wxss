@@ -1,0 +1,74 @@
+/* pages/index/index.wxss */
+
+
+.article_list navigator{
+  background-color: white;
+}
+.article_title {
+  display:inline-block;
+  margin-top: 36rpx;
+  font-weight: bold;
+  margin-left: 36rpx;
+}
+
+.a_center {
+   margin-left: 36rpx;
+   margin-right: 36rpx;
+  margin-top: 18rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user {
+  display: flex;
+  justify-content: start;
+  align-content: center;
+  align-items: center;
+}
+
+.author_icon {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 100px;
+}
+
+.author {
+  font-size: 24rpx;
+  font-weight: bold;
+  margin-left: 18rpx;
+  color: #707070;
+}
+
+.subtitle {
+  font-size: 28rpx;
+  margin-top: 24rpx;
+  color: #707070;
+}
+
+.a_left {
+  display: inline-block;
+}
+
+.article_image {
+  display: inline-block;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.a_footer{
+   margin-left: 36rpx;
+   margin-bottom: 18rpx;
+}
+.a_footer text {
+  color: #707070;
+  margin-right: 18rpx;
+  display: inline-block;
+  font-size: 20rpx;
+}
+
+.divLine {
+  background: #dee2e6;
+  width: 100%;
+  height: 1rpx;
+}
+

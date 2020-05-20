@@ -1,0 +1,25 @@
+<!--pages/index/index.wxml-->
+<cu-custom bgColor="bg-white" >
+	<view slot="content">摸鱼Blog</view>
+</cu-custom>
+<view class="article_list">
+  <navigator url="/pages/article/article?id={{item.id}}" wx:for='{{ArticleData}}' wx:key="index">
+    <text class="article_title">{{item.title}}</text>
+    <view class="a_center">
+      <view class="a_left">
+        <view class="user">
+          <image class="author_icon" mode="widthFix"                src="https://www.bzzb.top/images/default_head_img.jpg"></image>
+          <text class="author">{{item.author}}</text>
+        </view>
+        <text class="subtitle">{{item.subtitle}}</text>
+      </view>
+      <image class="article_image" mode="aspectFit"  src="https://bzzb.top/laravel_blog/{{item.image}}"></image>
+    </view>
+    <view class="a_footer">
+      <text>{{item.time}} 时间</text>
+      <text>12306 阅读</text>
+      <text>2 评论</text>
+    </view>
+  <view class="divLine"></view>
+  </navigator>
+</view>
